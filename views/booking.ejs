@@ -1,0 +1,35 @@
+<%- include("partials/CenterHeader"); -%>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var serviceType = '<h1>Choose service type</h1><p>Select personal for household goods & business for industrial & commercialitems</p><ul><li><div class="service-details"><a id="p_lT" href="#dynamic-container"><div class=""><h3>Personal</h3><p>Household or personal goods</p></div></a></div></li><li><div class="service-details"><a id="b_tT" href="#dynamic-container"><div class=""><h3>Business</h3><p>Enterprise, commercial or industrial goods</p></div></a></div></li></ul>';
+    //p = personal, lT = laadType, mp = movers..., fI = few-items, b = business, fT = fullTruck pT = partTruck, mT = materialType
+    var p_lT = '<p><a id="p_lT" href="#dynamic-container" class="navigation-links">Personal</u></a><h1>Choose load type</h1><p>Select your load type</p><ul><li><div class="service-details"><a href="/orderForm?type=p&option=mp1#dynamic-container"><div class=""><h3>Movers & Packers</h3><p>Complete household items shifting including furnitures</p></div></a></div></li><li><div class="service-details"><a href="/orderForm?type=p&option=fI1#dynamic-container"><div class=""><h3>Few packed items (1-5)</h3><p>Boxes, Appliances, & other non furniture items</p></div><a></div></li></ul>';
+
+    var b_tT = '<p><a id="b_tT" href="#dynamic-container" class="navigation-links">Business</a></p><h1>Choose truck type</h1><p>Select your Truck type</p><ul><li><div class="service-details"><a href="/orderForm?type=b&option=fT1#dynamic-container"><div class=""><h3>Full Truck</h3><p>Book full truck for no load limitations</p></div></a></div></li><li><div class="service-details"><a href="/orderForm?type=b&option=pT1#dynamic-container"><div class=""><h3>Part Truck</h3><p>Book Part truck for smaller items with limitations on loads</p></div><a></div></li></ul>';
+
+      $(".dynamic-container").html(serviceType);
+
+      $("#p_lT").click(function()
+                {
+                    $(".dynamic-container").html(p_lT);
+                });
+      $("#b_tT").click(function()
+                {
+                    $(".dynamic-container").html(b_tT);
+                });
+  });
+
+
+</script>
+
+<%- include("partials/locationContainer"); -%>
+<div class="contanier-fluid main-section">
+  <div class="container dynamic-container" id="#dynamic-container">
+
+  </div>
+</div>
+
+
+
+<%- include("partials/footer"); -%>

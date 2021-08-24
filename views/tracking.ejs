@@ -1,0 +1,27 @@
+<%- include("partials/CenterHeader"); -%>
+<div class="container-fluid tracker1">
+  <h1 class="tracker-heading">Track Your Order!</h1>
+
+
+    <div class="container tracking-section">
+      <form class="" action="/tracking" method="post">
+        <div id="floatContainer1" class="float-container">
+            <label for="floatField1">Order ID</label>
+            <input type="text" id="floatField1" data-placeholder="1200045678" required autocomplete="off" name="orderId">
+        </div>
+        <br>
+        <div id="floatContainer2" class="float-container">
+            <label for="floatField2">Registered Email</label>
+            <input type="email" id="floatField2" data-placeholder="username@examplemail.com" required autocomplete="off">
+        </div>
+        <br>
+        <div class="">
+          <button type="submit" class="btn btn-md btn-primary track-btn">Track</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+<script src="JS/input.js"></script>
+<%- include("partials/footer"); -%>

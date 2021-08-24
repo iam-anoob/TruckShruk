@@ -1,0 +1,56 @@
+<%- include("../partials/CenterHeader"); -%>
+
+<%  if (v == 1) {%>
+<div class="toast-bar">
+<p>Account is Successfully created, Please login to continue</p>
+</div>
+<% }else if (redirect) {%>
+  <div class="toast-bar-yellow">
+  <p>Please Login to continue</p>
+  </div>
+<%}else if (p==0) {%>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#message").text("Email or Password is incorrect, please check & try again");
+      });
+  </script>
+<%}%>
+
+<div class="row upperRow">
+  <div class="col-lg-6 align-Left">
+    <h1 class="Heading">Be our boss,</h1>
+    <h3 class="sub-Heading">& Grow with us!</h3>
+    <div class="bar"></div>
+    <p class="Description">TruckShruk offers the most efficient and time bound logistic services for businesses. With our huge fleet of vehicles we take care of your peak business requirements and bulk booking challenges. Clients also benefit
+      from significant cost savings</p>
+  </div>
+  <div class="col-sm-1">
+  </div>
+  <div class="col-lg-4 align-Right">
+    <div class="enterprises-section">
+      <h3 class="sub-Heading">Login</h3>
+      <div class="bar2"></div>
+      <form class="" action="/business/login?redirect=<%=redirect%>" method="post">
+        <div id="floatContainer1" class="float-container">
+            <label for="floatField1">Email</label>
+            <input type="email" id="floatField1" data-placeholder="username@yourcompany.com" required name="username">
+        </div>
+        <div id="floatContainer2" class="float-container">
+            <label for="floatField2">Password</label>
+            <input type="password" id="floatField2" data-placeholder="your password" required name="password">
+        </div>
+    <br>
+    <span id="message" style="color:red;"></span>
+    <div class="">
+        <a href="signup">Create an account?</a>
+        <button type="submit" class="btn btn-md btn-primary login-btn">Login</button>
+    </div>
+
+      </form>
+    </div>
+  </div>
+  </div>
+
+<script src="/JS/input.js"></script>
+
+<%- include("../partials/footer"); -%>

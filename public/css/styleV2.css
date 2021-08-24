@@ -1,0 +1,158 @@
+body {
+  /* text-align: center; */
+  font-family: "Poppins", sans-serif;
+}
+
+.row{
+  width: 100%;
+}
+.divider{
+  width: 100%;
+  border: 1px solid #5f5f5f;
+  margin-bottom: 0.8rem;
+}
+
+.align-Left{
+  text-align: left;
+}
+.align-Right{
+  text-align: right;
+}
+
+#navbar-container {
+  background-color: #222353;
+  color: #fff;
+  padding: 1.2rem 0rem 0rem 1rem ;
+  /* border-bottom: 2px solid #cfcfcf; */
+}
+
+.fa-arrow-left{
+  margin-right:95%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar {
+  padding: 0rem 4rem 0.5rem;
+  margin-left: 30%;
+
+}
+
+.navbar-brand {
+  margin-left: 10px;
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 3.5rem;
+  margin-top: -1.5rem;
+  font-weight: 300;
+}
+
+.top-container{
+  background-color: #222353;
+  padding: 3rem 0rem 5rem 0rem;
+  color: #fff;
+}
+
+.top-container a{
+
+  color: #fff;
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 1.1;
+  word-spacing: 10px;
+  padding: 0;
+  text-decoration: none;
+}
+
+.sub-heading {
+  font-family: "Poppins", sans-serif;
+  color: #dfdfdf;
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 1;
+  padding: 2rem 0 1.5rem;
+}
+
+.searchBox-container-others {
+  background: linear-gradient(180deg, #222353 20%, #fff 20%);
+  padding: 0 0 5rem 0;
+}
+
+.searchBox-others {
+  display: inline;
+  white-space: nowrap;
+  box-shadow: 0px 30px 55px 20px rgb(0 0 0 / 60%);
+}
+
+.locationInput {
+  height: 5rem;
+  padding: 2.5rem 1.5rem;
+  width: 30rem;
+  border: none;
+  border-radius: 0;
+  margin: -2.5px;
+}
+
+.locationInput:focus {
+  outline: none;
+}
+
+.dropCityInput {
+  border-left: 0.5px solid #d3d3d3;
+}
+
+.distance{
+  display: none;
+}
+.check-Btn {
+  height: 5rem;
+  width: 10rem;
+  background-color: #1d1e5b;
+  border: none;
+  color: #fff;
+  border-radius: 0;
+  margin: -2.5px;
+}
+
+.check-Btn:hover {
+  background-color: #2d2e6b;
+}
+
+
+/* --------Error Page-------- */
+
+.error{
+  background-color: #222353;
+  padding: 4rem 0rem 5rem 0rem;
+  color: #fff;
+  /* width: 100%; */
+}
+
+.error h1{
+  font-size: 9rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 4.5px;
+}
+.error h3{
+  word-spacing: 2px;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+.error span{
+
+  font-size: 0.8rem;
+  font-weight:  100;
+
+}
+
+.error a{
+  text-decoration: underline;
+  color: #fff
+}
+.error a:hover{
+  font-size: 1.9rem;
+}
+.error-img{
+  width: 60%;
+  text-align: left;
+}

@@ -1,0 +1,13 @@
+<div class="container-fluid searchBox-container-others">
+  <form class="" action="/estimate" method="post">
+    <div class="searchBox-others">
+      <input type="text" class="locationInput" placeholder="Enter Pickup City" aria-label="Pickup city" name="pickupCity" required id='pickupCity'>
+      <input type="text" class="locationInput dropCityInput" placeholder="Enter Drop City" aria-label="Drop city" name="dropCity" required id='dropCity'>
+
+      <button type="submit" class="check-Btn">Check Price</button>
+    </div>
+  </form>
+</div>
+
+<script src="/JS/searcher.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=APIKEY&libraries=places&region=IN&callback=activatePlacesSearch"></script>

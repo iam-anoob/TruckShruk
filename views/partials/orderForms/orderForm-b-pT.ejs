@@ -1,0 +1,56 @@
+<div class="container dynamic-container" id="#dynamic-container">
+<p><a id="#b_tT" class="navigation-links" href="/booking#dynamic-container">Business</a> > <a id="b_fT_mT" class="navigation-links" href="#dynamic-container">  Part Truck</a> </p>
+<h1>Enter load details</h1>
+<p>Suitable part truck will be recommended based on weight & specifications of the goods.</p>
+<form class="" action="/orderPreview?type=b&option=pT1" method="post">
+  <div class="orderDetails-form">
+  <div id="floatContainer1" class="float-container">
+    <span>Material details</span>
+      <label for="floatField1">Enter material name</label>
+      <input type="text" id="floatField1" data-placeholder="E.g. : Containers, machines, etc " required name="materialN">
+  </div>
+  <span class="dimensions-span">Dimensions</span>
+  <div class="dimensions">
+  <div id="floatContainer2" class="float-container">
+      <label for="floatField2">Length</label>
+      <input type="number" id="floatField2" data-placeholder="40" required autocomplete="off" min="1" max="" name="l">
+  </div>
+  <div id="floatContainer3" class="float-container">
+      <label for="floatField3">Width</label>
+      <input type="number" id="floatField3" data-placeholder="20" required autocomplete="off" min="1" max="" name="w">
+  </div>
+  <div id="floatContainer4" class="float-container">
+    <label for="floatField4">Height</label>
+    <input type="number" id="floatField4" data-placeholder="10" required autocomplete="off" min="1" max="" name="h">
+  </div>
+  <select class="dropdown" name="unit">
+    <option value="ft" class="dropdown-item" selected>ft</option>
+    <option value= "cm" class="dropdown-item" >cm</option>
+    <option value="inch" class="dropdown-item">inch</option>
+  </select>
+</div>
+
+<span class="dimensions-span">Weight</span>
+<div class="dimensions">
+<div id="floatContainer5" class="float-container">
+  <label for="floatField5">Enter weight in KGs</label>
+  <input type="number" id="floatField5" data-placeholder="100 KG" min="1" max="7000" required autocomplete="off" name="wgt">
+</div>
+<select class="dropdown1" name="wgtUnit">
+  <option value="KG" class="dropdown-item">KG</option>
+  <option value= "Tonne" class="dropdown-item" >Tonne</option>
+</select>
+</div>
+
+<div id="floatContainer6" class="float-container">
+  <span>Quantity</span>
+  <label for="floatField5">No. of Items</label>
+  <input type="number" id="floatField6" data-placeholder="" value="1" min="1" max="2" required autocomplete="off" name="q">
+</div>
+
+<div class="">
+  <button type="submit" class="btn btn-lg address-btn" id="#add">Enter Address</button>
+</div>
+</div>
+</form>
+</div>

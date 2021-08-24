@@ -1,0 +1,17 @@
+<%- include("../partials/CenterHeader"); -%>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#logout").click(function(){
+      $.get("http://localhost:1234/business/logout"});
+    });
+    });
+</script>
+  <h1>Successfully Logged in!</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a type="button" id="logout" class="btn btn-lg btn-danger" href="/business/logout" name="button">LOG OUT?</a>
+<%- include("../partials/footer"); -%>

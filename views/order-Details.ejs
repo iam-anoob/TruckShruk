@@ -1,0 +1,117 @@
+<%- include("partials/CenterHeader"); -%>
+<div class="row upperRow">
+  <h1 class="Heading">Order Details</h1>
+  <p>Order# <u><%=order.orderId%></u> | Ordered on <%=order.orderDate.slice(4, 25)%></p>
+  <div class="col-lg-6 confirmOrder">
+    <div>
+      <h3 class=""><i class="far fa-dot-circle"></i><span>&nbsp&nbsp&nbsp <%=order.P_addLn4%>, <%=order.P_addLn6%></span></h3>
+      <h3 class=""><i class="fas fa-arrow-down"></i></h3>
+      <h3 class=""><i class="fas fa-map-marker-alt"></i><span> &nbsp&nbsp&nbsp<%=order.D_addLn4%>, <%=order.D_addLn6%></span></h3>
+    </div>
+    <br><br>
+    <% if ( order.type == "p&mp"){%>
+      <div class="row ">
+        <h4>House Details</h4>
+        <p><b>Total Rooms : </b><%=order.roomNo%></p>
+        <p><b>Pickup Floor : </b><%=order.pickupFloor%></p>
+        <p><b>Drop Floor : </b><%=order.dropFloor%></p>
+        <p><b>Approx No. of Items : </b><%=order.q%></p>
+      </div>
+
+    <% } else {%>
+      <div class="row order-Details">
+        <h4>Load Details</h4>
+        <div class="col-lg-5">
+          <b>Material Name</b>
+          <p><%=order.materialN%></p>
+        </div>
+        <div class="col-md-3">
+          <b>Dimensions</b>
+          <p><%=order.l%> x <%=order.w%> x <%=order.h%> <%=order.unit%></p>
+        </div>
+        <div class="col-sm-2">
+          <b>Weight</b>
+          <p><%=order.wgt%> <%=order.wgtUnit%> </p>
+        </div>
+        <div class="col-sm-2">
+          <b>Quantity</b>
+          <p><%=order.q%></p>
+        </div>
+      </div>
+    <%}%>
+  </div>
+    <div class="col-lg-6 confirmOrder2">
+      <h4> Live Status : <u>Order Confirmed!</u></h4>
+      <br><br><br><br>
+      <div class="">
+        <div class="row">
+          <div class="col-sm-4">
+            <h4>Subtotal : </h4>
+          </div>
+          <div class="col-lg-4">
+            <b>Base fare : </b>
+            <b>Taxes : </b>
+            <hr>
+            <b class="total">Total Paid  </b>
+              </div>
+          <div class="col-lg-4">
+            <p>₹ <%=order.fare%></p><br>
+            <p>₹ <%=order.tax%></p>
+            <hr>
+            <p class="total">₹ <%=order.amount%></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="row upperRow" style="margin-top:-8rem;">
+  <div class="col-lg-6 confirmOrder">
+    <div class="row">
+      <div class="col-lg-5">
+        <h4>Pickup address</h4>
+        <p><b><%=order.P_name%></b><br>
+          <%=order.P_addLn1%>, <%=order.P_addLn2%><br>
+          <%=order.P_addLn4%> - <%=order.P_addLn5%>,<br>
+          <%=order.P_addLn6%>.<br>
+          <%=order.P_addLn3%><br>
+          <i class="fas fa-phone-alt"></i> <%=order.P_mob%><br>
+          <i class="far fa-envelope"></i> <%=order.username%><br>
+        </p>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-lg-5">
+        <h4>Drop address</h4>
+      <% if (order.type == "p&fI" || order.type == "p&mp"){%>
+          <br><p><%=order.D_name%>,<br>
+      <%} else{%>
+        <p><b><%=order.D_name%></b><br>
+      <%}%>
+          <%=order.D_addLn1%>, <%=order.D_addLn2%><br>
+          <%=order.D_addLn4%> - <%=order.D_addLn5%>,<br>
+          <%=order.D_addLn6%>.<br>
+          <%=order.D_addLn3%><br>
+          <% if (order.D_mob == ""){} else{%>
+          <i class="fas fa-phone-alt"></i> <%=order.D_mob%><br>
+          <%}%>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 confirmOrder2">
+    <div class="">
+      <i class="fas fa-calendar-day fa-1.5x"></i>
+      <h4> Pickup Date : </h4>
+      <p><%=order.pickupDate%></p><br><br>
+      <i class="fas fa-arrows-alt-h fa-1.5x"></i>
+      <h4> Distance : </h4>
+      <p><%=order.distance%></p><br><br>
+      <i class="far fa-clock fa-1.5x"></i>
+      <h4> Approx Duration : </h4>
+      <p><%=order.duration%></p><br><br>
+    </div>
+  </div>
+
+</div>
+
+<%- include("partials/footer"); -%>

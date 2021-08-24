@@ -1,0 +1,88 @@
+
+<%- include("../partials/CenterHeader"); -%>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+  var verifySection = ' <h3 class="sub-Heading">Verify OTP</h3> <div class="bar2"></div> <form class="" action="/verify" method="post"> <span id="message"></span><br> <div id="floatContainer16" class="float-container"> <label for="floatField16">Enter OTP</label> <input type="text" id="floatField16" style="padding-top:2.6rem;" data-placeholder="Enter OTP" name="otp" required> </div> <div class=""> <a href="login" class="">Login instead?</a> <button type="submit" class="btn btn-md btn-primary verify-btn" id="verify">Verify OTP</button> </div> </form>'
+	var from,to,subject,text;
+	$("#submit").click(function(){
+    repName=$("#floatField1").val();
+    compName=$("#floatField2").val();
+    compMob=$("#floatField3").val();
+		email=$("#floatField4").val();
+		compSector=$("#floatField5").val();
+    password=$("#floatField6").val();
+    $.post("http://localhost:1234/business/signup",{repName:repName, compName:compName, compMob:compMob, email:email, compSector:compSector, password:password});
+    $(".enterprises-section").html(verifySection);
+		$("#message").text("Sending E-mail...Please wait");
+
+		$.get("http://localhost:1234/send",function(data){
+		if(data=="sent")
+		{
+			$("#message").empty().html("<p>Email is been sent at "+email +" . Please check inbox !</p>");
+		}
+      });
+});
+});
+</script>
+
+<div class="row upperRow">
+  <div class="col-lg-6 align-Left">
+    <h1 class="Heading">Be our boss,</h1>
+    <h3 class="sub-Heading">& Grow with us!</h3>
+    <div class="bar"></div>
+    <p class="Description">TruckShruk offers the most efficient and time bound logistic services for businesses. With our huge fleet of vehicles we take care of your peak business requirements and bulk booking challenges. Clients also benefit
+      from significant cost savings</p>
+  </div>
+  <div class="col-sm-1">
+  </div>
+  <div class="col-lg-4 align-Right">
+    <div class="enterprises-section">
+      <h3 class="sub-Heading">Sign up</h3>
+      <div class="bar2"></div>
+      <form class="">
+        <div id="floatContainer1" class="float-container">
+            <label for="floatField1">Contact Person</label>
+            <input type="text" id="floatField1" data-placeholder="Your Name" name="repName" required>
+        </div>
+        <div id="floatContainer2" class="float-container">
+            <label for="floatField2">Company Name</label>
+            <input type="text" id="floatField2" data-placeholder="Your Comapny Pvt. Ltd." name="compName" required>
+        </div>
+        <div id="floatContainer3" class="float-container">
+            <label for="floatField3">Mobile Number</label>
+            <input type="tel" maxlength="10" id="floatField3" data-placeholder="99999 99999" name="compMob" required>
+        </div>
+        <div id="floatContainer5" class="float-container">
+            <label for="floatField5">Business Sector</label>
+            <input type="text" id="floatField5" data-placeholder="Manufacturing, FMCG, Chemical" name="compSector" required>
+        </div>
+        <div id="floatContainer4" class="float-container">
+            <label for="floatField4">Email Address</label>
+            <input type="email" id="floatField4" data-placeholder="username@companyname.com" name="email" required>
+        </div>
+        <div id="floatContainer6" class="float-container">
+            <label for="floatField6">Set Password</label>
+            <input type="password" id="floatField6" data-placeholder="**********" minlength="6" maxlength="16" name="password" required>
+        </div>
+        <div class="privacy-terms-container align-Left">
+          <input type="checkbox" id="privacy-terms" name="" value="" onchange="activateButton(this)" required>
+          <label for="privacy-terms">I agree with the <a href="about#terms" target="_blank">terms & conditions</a> and the <a href="about#privacy" target="_blank">privacy policy</a> </label>
+        </div>
+        <div class="privacy-terms-container align-Left">
+          <input type="checkbox" id="Subscribe" name="" value="" checked>
+          <label for="Subscribe">Subscribe to our montly newsletter!</label>
+        </div><br>
+        <span id="message"></span>
+        <div class="">
+          <a href="login" class="">Login instead?</a>
+          <button type="submit" class="btn btn-md btn-primary verify-btn" id="submit">Verify OTP</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+
+<script src="/JS/input.js"></script>
+<%- include("../partials/footer"); -%>

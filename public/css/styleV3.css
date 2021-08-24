@@ -1,0 +1,384 @@
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #121330;
+}
+
+.divider {
+  width: 100%;
+  border: 1px solid #5f5f5f;
+  margin-bottom: 0.8rem;
+}
+
+.bar {
+  width: 140px;
+  border-radius: 8px;
+  background-color: #2d2e7b;
+  height: 6px;
+  margin-bottom: 1.5rem;
+  /* margin-left:5.7rem; */
+}
+
+.bar2 {
+  margin-left: 28%;
+  width: 150px;
+  border-radius: 20px;
+  /* background-color:#2d2e7b; */
+  background: linear-gradient(90deg, #4285F4, #DB4437, #F4B400, #0F9D58);
+  height: 6px;
+  margin-bottom: 1.5rem;
+  /* margin-left:5.7rem; */
+}
+
+.toast-bar, .toast-bar-yellow {
+  color: #fff;
+  padding: 3px 0 0 0;
+  background-color: hsl(116, 46%, 49%);
+}
+
+.toast-bar-yellow {
+  color: #000;
+  background-color: hsl(53, 98%, 47%);
+}
+
+.upperRow {
+  padding: 3.5rem 4rem 2rem 4rem;
+  width: 100%;
+}
+
+.Heading, .confirmOrder h1, .confirmOrder2 h1 {
+  font-size: 3.7rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.sub-Heading {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 0.5;
+  padding-bottom: 0.8rem;
+}
+
+.Description {
+  line-height: 1.7;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 0rem;
+  padding: 0rem 3rem 0rem 0rem;
+}
+
+.enterprises-section {
+  padding: 2rem 1rem 1rem 1rem;
+  border: 1px solid #121330;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.float-container {
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  padding: 0 14px;
+  position: relative;
+  width: 300px;
+}
+
+.float-container input {
+  border: none;
+  border-bottom: solid 1px #ccc;
+  font-size: 16px;
+  outline: 0;
+  padding: 25px 0 0px 0;
+  width: 100%;
+}
+
+.float-container label {
+  cursor: text;
+  font-size: 16px;
+  position: absolute;
+  transform-origin: top left;
+  transform: translate(0, 16px) scale(1);
+  transition: all 0.1s ease-in-out;
+}
+
+.float-container.active label {
+  transform: translate(0, 4px) scale(0.75);
+}
+
+label sup {
+  color: #DB4437;
+}
+
+.privacy-terms-container {
+  display: flex;
+  padding: 12px 14px 0px;
+  color: #5f5f5f;
+}
+
+.privacy-terms-container a {
+  color: #2d2e7b;
+  text-decoration: underline;
+}
+
+.privacy-terms-container input {
+  margin: 5px 5px 0 0;
+}
+
+.verify-btn, .login-btn {
+  margin-left: 24%;
+}
+
+.verticalNav {
+  background: linear-gradient(90deg, #222353 75%, #fff 25%);
+  color: #fff;
+  padding: 2.5rem 0rem 2rem 3.5rem;
+}
+
+.verticalNav a {
+  color: #fff;
+}
+
+.enterprises-image {
+  width: 375px;
+  height: 375px;
+  margin: 6rem 0rem 8rem 0rem;
+}
+
+.tracker1 {
+  text-align: center;
+}
+
+.tracking-section {
+  width: 28%;
+  padding: 2rem 1rem 1rem 1rem;
+  border: 1px solid #121330;
+  border-radius: 10%;
+  /* text-align: center; */
+}
+
+.tracker-heading {
+  padding: 2.5rem 0;
+  font-size: 3.7rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #121330;
+  text-align: center;
+}
+
+/* -------BOOKING PAGE------- */
+.city {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.booking-top {
+  padding: 4% 0;
+  width: 100%;
+}
+
+.fa-arrow-right {
+  padding: 10% 0;
+}
+
+.main-section {
+  padding: 4rem 0 3.5rem 0;
+  width: 100%;
+  box-shadow: 0px 0px 50px rgba(10, 10, 10, 1);
+  margin-bottom: -10rem;
+}
+
+.dynamic-container, .confirmOrder {
+  width: 50%;
+  padding: 2.5rem 2rem;
+  text-align: left;
+  border: 1px solid #121330;
+  border-radius: 5%;
+}
+
+.confirmOrder {
+  padding: 2.5rem 2rem 0rem 2rem;
+  margin: 6% 0 1% 5%;
+}
+
+.confirmOrder2 {
+  width: 40%;
+  padding: 2.5rem 1rem 0rem 1rem;
+  text-align: left;
+  border: 1px solid #121330;
+  border-radius: 5%;
+  margin: 6% 0 1% 3%;
+}
+
+.location-desc {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 12% 0;
+}
+
+.confirmOrder2 h3 {
+  font-weight: 400;
+  margin: 1.6% 0% 3% 0.2%;
+  /* padding: 5rem 0 1rem 0; */
+}
+
+.confirmOrder2 span {
+  margin: 0% 1.6rem;
+  /* padding: 5rem 0 1rem 0; */
+}
+
+.navigation-links {
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.navigation-links:hover {
+  text-decoration: underline;
+}
+
+.dynamic-container h1 {
+  font-size: 3rem;
+  color: #121330;
+}
+
+.dynamic-container ul {
+  margin-top: 3rem;
+  list-style-type: none;
+}
+
+.service-details {
+  width: 80%;
+  margin: 0rem -1.7rem;
+  padding: 1.5rem 0 1rem 0;
+  border-top: 0.7px solid #afafaf;
+  border-bottom: 0.7px solid #afafaf;
+}
+
+.dynamic-container a {
+  color: #121330;
+  text-decoration: none;
+}
+
+.service-details:hover {
+  color: #121330;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.service-details h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.orderDetails-form {}
+
+.orderDetails-form span, .confirmOrder h4 {
+  display: block;
+  font-weight: 600;
+  padding: 1.5rem 0 0rem;
+}
+
+.dimensions-span {
+  margin: 0 14px;
+}
+
+.dimensions {
+  display: flex;
+}
+
+.dimensions input {
+  width: 45%;
+}
+
+.dropdown {
+  margin-top: 8px;
+  padding: 5px 5px;
+  outline: 0;
+  border: 1px solid #cfcfcf;
+  height: 2.5rem;
+  width: 25%;
+}
+
+.dropdown1 {
+  margin-top: 8px;
+  padding: 5px 5px;
+  outline: 0;
+  border: 1px solid #cfcfcf;
+  height: 2.5rem;
+  width: 25%;
+}
+
+.address-btn {
+  background-color: #222353;
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 2.5rem 14px 0.5rem;
+}
+
+.address-btn:hover {
+  background-color: #2d2e8b;
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 2.5rem 14px 0.5rem;
+}
+
+.order-Details h4, .confirmOrder h4 {
+  margin: 0 0 2% 0%;
+  text-decoration: underline;
+}
+
+.shipping-add h4 {
+  text-decoration: underline;
+  padding-bottom: 1%;
+}
+
+.shipping-add, .order-Details {
+  margin: 4.2% 0%;
+}
+
+.confirmOrder2 h4 {
+  display: inline;
+  font-weight: 500;
+  margin: 1.5rem 0 0 0.5rem;
+}
+
+.confirmOrder2 p {
+  display: inline;
+}
+
+.amount {
+  margin: 11% 0% 5% 4%;
+}
+
+.amount b {
+  font-weight: 100;
+  margin-right: 60%;
+}
+
+.amount hr {
+  margin-left: -10%;
+  border: 0.5px solid #121330;
+  width: 70%;
+}
+
+.amount .total {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.amount .payment-btn {
+  background-color: #121330;
+  color: #fff;
+  margin: 6% 0 3% 0;
+  border-radius: 5px;
+}
+
+.amount .payment-btn {
+  background-color: #222353;
+  color: #fff;
+}
+
+.faded {
+  color: #afafaf;
+  text-align: center;
+}

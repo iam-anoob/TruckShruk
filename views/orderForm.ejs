@@ -1,0 +1,37 @@
+<link href="/css/the-datepicker.css" rel="stylesheet" />
+<script src="/JS/the-datepicker.js"></script>
+
+<%- include("partials/CenterHeader"); -%>
+
+<%- include("partials/locationContainer"); -%>
+
+<div class="contanier-fluid main-section">
+<% if (type == "b&fT1"){ %>
+<%- include("partials/orderForms/orderForm-b-fT"); -%>
+
+<% } else if (type == "b&fT2"){%>
+<%- include("partials/orderForms/shipping-b-fT"); -%>
+
+<% } else if (type == "b&pT1"){%>
+<%- include("partials/orderForms/orderForm-b-pT"); -%>
+
+<% } else if (type == "b&pT2"){%>
+<%- include("partials/orderForms/shipping-b-pT"); -%>
+
+<% } else if (type == "p&mp1"){%>
+<%- include("partials/orderForms/orderForm-p-mp"); -%>
+
+<% } else if (type == "p&mp2"){%>
+<%- include("partials/orderForms/shipping-p-mp"); -%>
+
+<% } else if (type == "p&fI1"){%>
+<%- include("partials/orderForms/orderForm-p-fI"); -%>
+
+<% } else if (type == "p&fI2"){%>
+<%- include("partials/orderForms/shipping-p-fI"); -%>
+
+<%} else{%>
+  <h1>not working</h1>
+<%}%>
+</div>
+<script src="/JS/input.js"></script>

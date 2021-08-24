@@ -1,0 +1,64 @@
+.footer{
+  margin-top: 10rem;
+  background-color: #121330;
+  padding: 4rem 6rem 0.5rem 6rem;
+}
+.footer-heading{
+  font-size: 3.5rem;
+  font-weight: 600;
+  color:#fff;
+  margin-top: 6.5rem;
+}
+.footer-right{
+  padding:0rem 0rem 0rem 2rem;
+}
+.footer-description{
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 0rem;
+  padding:0rem 3rem 1rem 0rem;
+  color: #cfcfcf;
+
+}
+
+.footer p a{
+  color: inherit;
+}
+
+.btn-footer{
+  font-size: 1.1rem;
+  margin: 0rem 1rem 6rem 0rem;
+  border-radius: 8px;
+}
+
+.social-media-btn{
+  color: #fff;
+  margin: 6rem 3rem 0rem 1rem;
+}
+
+.fa-twitter:hover{
+  color: #1DA1F2;
+}
+.fa-facebook-f:hover{
+  color: #4267B2;
+}
+.fa-linkedin-in:hover{
+  color: #0E76A8;
+}
+.fa-youtube:hover{
+  color: #c4302b;
+}
+.fa-instagram:hover{
+  color: #cd486b;
+}
+
+.footer p{
+  color: #afafaf;
+  margin-top: 1.5rem;
+}
+
+.scrollTop{
+  padding-top: 2.5rem;
+  color: #afafaf;
+  text-decoration: underline;
+}

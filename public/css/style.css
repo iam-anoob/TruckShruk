@@ -1,0 +1,403 @@
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------Home-page-Navbar--------  */
+
+#navbar-container {
+  background-color: #222353;
+  color: #fff;
+  padding: 0rem 0rem 8rem 0 ;
+}
+
+.navbar {
+  padding: 1rem 6rem 0.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.nav-item {
+  padding: 0 7px;
+  margin-right: 0px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  color: #fff;
+}
+
+.btn-signup:hover {
+  background-color: #222353;
+  color: #fff;
+}
+
+/* -------Carousel--------  */
+
+.BG-Dark{
+  background-color: #222353
+}
+.BG-Light{
+  background-color: #2d2e6b;
+  padding-top: 3%;
+  padding-bottom: 8.2%;
+}
+
+.carousel-Text-left {
+  padding: 6rem 2rem 1rem 5rem;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #fff;
+}
+.carousel-Text-center{
+  text-align: center;
+  padding: 6rem 1rem 1rem 1rem;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #fff;
+}
+.carousel-item p{
+  color: #cfcfcf;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.carousel-Text-right {
+  padding: 6rem 5rem 1rem 2rem;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.carousel-Image-big{
+  width: 600px;
+  height: 400px;
+  margin: 4rem 2rem 0rem 3rem;
+}
+
+.carousel-Image-small{
+  width: 300px;
+  height: 250px;
+  margin: 4rem 3rem 0rem 3rem;
+}
+
+/* .title-image {
+  position: relative;
+    z-index: 102;
+    display: block;
+    max-width: none;
+    margin-right: -468px;
+    margin-left: -26px;
+    border-radius: 15px;
+    box-shadow: none;
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 0%;
+} */
+
+.big-heading {
+  color: #121330;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1.1;
+  word-spacing: 8px;
+  padding: 6rem 0rem 1rem 0;
+}
+
+.sub-heading {
+  color: #121330;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  padding: 0 0 3.5rem;
+}
+
+.searchBox-container-home {
+  background: linear-gradient(180deg, #fff 20%, #2d2e6b 20%);
+  padding: 0 0 5rem 0;
+}
+
+.searchBox-home {
+  display: inline;
+  white-space: nowrap;
+  box-shadow: 0px 30px 55px 20px rgb(0 0 0 / 80%);
+}
+
+.locationInput {
+  height: 2.5rem;
+  padding: 2.5rem 1.5rem;
+  width: 27rem;
+  border: none;
+  border-radius: 0;
+  margin: -2.5px;
+}
+
+.locationInput:focus {
+  outline: none;
+}
+
+.dropCityInput {
+  border-left: 0.5px solid #d3d3d3;
+}
+
+.check-Btn {
+  height: 5rem;
+  width: 10rem;
+  background-color: #222353;
+  border: none;
+  color: #fff;
+  border-radius: 0;
+  margin: -2.5px;
+}
+
+.check-Btn:hover {
+  background-color: #2d2e6b;
+}
+
+.mid-container {
+  background-color: #2d2e6b;
+  color: #fff;
+  padding: 2.5rem 0;
+  width: 100%;
+}
+
+.mid-container h1{
+  font-weight: 500;
+  font-size: 2.7rem;
+  padding: 0.5rem 0rem 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.working {
+  /* margin: 2rem 5rem; */
+  text-align: left;
+  width: 100%;
+}
+
+.working p {
+  /* display: block; */
+  margin-left: 8rem;
+  margin-bottom: 3rem;
+}
+
+.working .count {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #000;
+  text-align: center;
+  padding-top: 7px;
+  margin-right: 1.8rem;
+  box-shadow: 3px 10px 10px 5px rgb(0 0 0 / 30%);
+}
+
+.working .title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.working .description {
+  margin-left: 4.5rem;
+  color: #afafaf;
+  font-weight: 300;
+  font-size: 1rem;
+  display: flex;
+}
+
+.device{
+  margin-top: -2rem;
+  width: 100%;
+  height: auto;
+}
+
+.features{
+    padding: 5rem 3.8rem 5rem 5.5rem;
+}
+
+ .feature-heading{
+   font-weight: 600;
+   font-size: 2rem;
+   text-align: left;
+   margin-bottom: 1rem;
+   color: #121330;
+ }
+
+ .bar {
+     width: 140px;
+     border-radius: 8px;
+     background-color:#2d2e7b;
+     height: 8px;
+     /* margin-left:5.7rem; */
+ }
+
+.feature-box{
+  padding: 4rem 0rem 4rem 1.7rem;
+}
+
+.feature-title{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.feature-box p{
+  font-size: 0.9rem;
+  color: #5f5f5f;
+}
+
+.icon, .services-icon{
+  color: #222353;
+  margin-bottom: 1.3rem;
+}
+
+.icon:hover {
+  color: #2d2e8b;
+}
+
+.fleets{
+    padding: 4.5rem 4rem 4.5rem 5rem;
+    text-align: right;
+    color: #fff;
+    background-color: #2d2e6b;
+}
+
+ .fleets-heading{
+   font-weight: 500;
+   font-size: 2rem;
+   margin-bottom: 1rem;
+ }
+
+.fleets-bar{
+      width: 140px;
+      border-radius: 8px;
+      background-color:#fff;
+      height: 6px;
+      margin-left: 87%;
+}
+
+.fleet-box {
+  padding: 4.6rem 5rem 3.5rem 2rem;
+}
+
+.col-sm-1{
+    padding: 4rem 1rem 4.5rem 1rem;
+}
+
+.fleet-img{
+  width: 7rem;
+  height: 7rem;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  background: no-repeat 0 0;
+  background-size: auto 30.9rem;
+}
+
+.fleet-icon{
+  background-color: #fff;
+  width: 7rem;
+  height: 7rem;
+  text-align: center;
+  padding: 1.9rem 1rem 1rem;
+  /* margin: 5rem auto; */
+  border-radius: 50%;
+  color: #222353;
+  margin: 0 auto 2rem;
+}
+
+.fleet-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  /* text-align: center; */
+}
+
+.fleets-shortBar{
+  width: 70px;
+  border-radius: 8px;
+  background-color:#fff;
+  height: 5px;
+  margin-left: 94%;
+  margin-top: 0.7rem;
+}
+
+ .services{
+   padding: 7rem 3.8rem 5rem 5.5rem;
+ }
+
+ .services-box {
+   padding: 4.6rem 5rem 3.5rem 2rem;
+ }
+
+
+ .services-count, .enterprises-heading, .captain-heading, .footer-heading{
+   font-size: 3.5rem;
+   font-weight: 600;
+   margin-bottom: 0rem;
+   color: #121330;
+ }
+
+.services-name{
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 0rem;
+}
+
+.divider{
+  width: 100%;
+  border: 1px solid #5f5f5f;
+  margin-bottom: 0.8rem;
+}
+
+.align-Left{
+  text-align: left;
+}
+.align-Right{
+  text-align: right;
+}
+
+.enterprises, .captain{
+  padding: 4rem 6rem;
+}
+
+.description{
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 0rem;
+  padding:0.9rem 3rem 0rem 0rem;
+}
+
+.captain .description{
+  padding:0.9rem 0rem 0rem 3rem;
+}
+
+.enterprises-image{
+  width: 400px;
+  height: 400px;
+}
+
+.captain-image{
+  width: 350px;
+  height: 400px;
+}
+
+.btn-signup-enterprises, .btn-signup-captain{
+  background-color: #222353;
+  padding: 2%;
+  color: #fff;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.btn-signup-enterprises:hover, .btn-signup-captain:hover{
+  background-color: #2d2e8b;
+  color: #fff;
+  border-radius: 8px;
+}

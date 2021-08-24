@@ -1,0 +1,229 @@
+<%- include("partials/header"); -%>
+  <div class="container-fluid" id="navbar-container">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-truck" alt="" width="30" height="24" class=""></i><span class="navbar-brand">
+            TruckShruk</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/estimate">Get Estimate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tracking">Track</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <%if (login==1) {%>
+          <li class="nav-item">
+              <a type="button" href="/business/myaccount" class="btn btn-light btn-md btn-signup">Go to Dashboard</a>
+          </li>
+        <%} else {%>
+          <li class="nav-item">
+            <a type="button" href="/business/signup" class="btn btn-light btn-md btn-signup">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a type="button" href="/business/login" class="btn btn-outline-light btn-md btn-login">Login</a>
+          </li>
+      <% }%>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="carousel-Slides" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active BG-Dark" data-bs-interval="1900">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="carousel-Text-left align-Left">Now Delivering in 40+ cities in India </h2>
+          </div>
+          <div class="col-lg-6">
+            <img src="/images/carousel/city-buildings.png" class="carousel-Image-big align-Right" alt="...">
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item " data-bs-interval="1900">
+        <div class="row BG-Light">
+          <div class="col-lg-4">
+            <img src="/images/carousel/gateway.png" class="carousel-Image-small align-Left" alt="...">
+          </div>
+          <div class="col-lg-4">
+            <h2 class="carousel-Text-center">Outstation Delivery?</h2>
+            <p>No Worries! We got you covered!</p>
+          </div>
+          <div class="col-lg-4">
+            <img src="/images/carousel/packages.png" class="carousel-Image-small align-Right" alt="...">
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item BG-Dark" data-bs-interval="2400">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="/images/carousel/truck-carousel.png" class="carousel-Image-big" alt="...">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="carousel-Text-right align-Right">Get Huge Array of Trucks to choose from with TruckShruk</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item " data-bs-interval="1900">
+        <div class="row BG-Light">
+          <div class="col-lg-4">
+            <img src="/images/carousel/house.png" class="carousel-Image-small align-Left" alt="...">
+          </div>
+          <div class="col-lg-4">
+            <h2 class="carousel-Text-center">Movers & packers</h2>
+            <p>House shifting? We got you covered!</p>
+          </div>
+          <div class="col-lg-4">
+            <img src="/images/carousel/city-tower.png" class="carousel-Image-small align-Right" alt="...">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <h1 class="big-heading">Hire Full Truck & <br> Part Trucks</h1>
+    <h3 class="sub-heading">India's only Online booking platform with Transparent Pricing</h3>
+  </div>
+
+<%- include("partials/searchBox-home"); -%>
+
+  <div class="container-fluid mid-container">
+    <h1>How TruckShruk works?</h1>
+    <div class="row working">
+      <div class="col-lg-6">
+        <p><span class="count">1</span><b class="title">Enter the details</b> <br><span class="description">Submit the details of pick up, drop and <br>dimensions of the cargo</span></p>
+        <p><span class="count">2</span><b class="title">Select the Truck</b> <br><span class="description">Find out exactly which truck suits <br>you best</span></p>
+        <p><span class="count">3</span><b class="title">Get instant rates</b> <br><span class="description">Explore the prices & select your <br>payment mode</span></p>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/device-ss.png" alt="" class="device">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid features">
+    <h1 class="feature-heading">Why TruckShruk ?</h1>
+    <div class="bar"></div>
+    <div class="row">
+      <div class="feature-box col-sm-3">
+        <i class="icon fas fa-mobile-alt fa-5x"></i>
+        <h3 class="feature-title">Hassle-Free truck rental</h3>
+        <p>Book trucks online. Whenever you need, wherever you need</p>
+      </div>
+      <div class="feature-box col-sm-3">
+        <i class="icon fas fa-rupee-sign fa-5x"></i>
+        <h3 class="feature-title">Transparent Pricing</h3>
+        <p>Enjoy the most affordable rates in town with our transparent pricing</p>
+      </div>
+      <div class="feature-box col-sm-3">
+        <i class="icon fas fa-map-marked-alt fa-5x"></i>
+        <h3 class="feature-title">Realtime Tracking</h3>
+        <p>Track your goods movement across the city with our app</p>
+      </div>
+      <div class="feature-box col-sm-3">
+        <i class="icon fas fa-user-shield fa-5x"></i>
+        <h3 class="feature-title">Safe and Reliable Trucks</h3>
+        <p>Superior safety ensured with our team of verified & trained partners</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid fleets" id="services">
+    <h1 class="fleets-heading">What we offer ?</h1>
+    <div class="fleets-bar"></div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-2 fleet-box">
+        <!-- <div class="background selected fleetimg" style="background-image: url(https://d35ppnqksufxmo.cloudfront.net/frontend_website/33896bcd86407d1f53f9c7d82548cd58.jpg);"></div> -->
+        <img class="fleet-img" src="/images/tata-ace.jpg" alt="">
+        <h3 class="fleet-name">Tata Ace</h3>
+      </div>
+      <div class="col-sm-2 fleet-box">
+        <i class="fleet-icon fas fa-truck-moving fa-3x"></i>
+        <h3 class="fleet-name">Trailer</h3>
+      </div>
+      <div class="col-sm-2 fleet-box">
+        <img class="fleet-img" src="/images/tata-407.jpg" alt="">
+        <h3 class="fleet-name">Tata 407</h3>
+      </div>
+      <div class="col-sm-2 fleet-box">
+        <i class="fleet-icon fas fa-truck-loading fa-3x"></i>
+        <h3 class="fleet-name">Movers & Packers</h3>
+      </div>
+      <div class="col-sm-2 fleet-box">
+        <img class="fleet-img" src="/images/8ft-1ton.jpg" alt="">
+        <h3 class="fleet-name">8ft 1Ton</h3>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <h1 class="fleet-name">& many more...</h1>
+    <div class="fleets-shortBar"></div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row services">
+      <div class="col-md-4 service-box">
+        <i class="services-icon fas fa-truck fa-2x"></i>
+        <h3 class="services-count">6000+</h3>
+        <p class="services-name">Trucks</p>
+      </div>
+      <div class="col-md-4 service-box">
+        <i class="services-icon fas fa-city fa-2x"></i>
+        <h3 class="services-count">40+</h3>
+        <p class="services-name">Cities</p>
+      </div>
+      <div class="col-md-4 service-box">
+        <i class="services-icon fas fa-user-tie fa-2x"></i>
+        <h3 class="services-count">2500+</h3>
+        <p class="services-name">Clients</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="container-fluid">
+    <div class="row enterprises">
+      <div class="col-lg-6 align-Left">
+        <h2 class="enterprises-heading">For Enterprises</h2>
+        <p class="description">we offers the most efficient and time bound logistic services for businesses. With our huge fleet of vehicles we take care of your peak business requirements and bulk booking challenges. Clients also benefit
+          from significant cost savings</p>
+        <a type="button" href="/business/signup" class="btn btn-signup-enterprises btn-lg">Enterprise signup</a>
+      </div>
+
+      <div class="col-lg-6 align-Right">
+        <img src="/images/enterprises.jpg" class="enterprises-image" alt="">
+      </div>
+    </div>
+    <hr class="divider">
+    <div class="row captain">
+      <div class="col-lg-6 align-Left">
+        <img src="/images/captain-image.jpeg" class="captain-image" alt="">
+      </div>
+      <div class="col-lg-6 align-Right">
+        <h2 class="captain-heading">Become a captain, <br> & join us!</h2>
+        <p class="description">Drive with us and be a leader. Maximize earnings, faster and easier than ever before! You are just a click away.</p>
+        <button type="button" class="btn btn-signup-captain btn-lg">Driver signup</button>
+      </div>
+    </div>
+  </div>
+
+<%- include("partials/footer"); -%>

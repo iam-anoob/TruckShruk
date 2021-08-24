@@ -1,0 +1,117 @@
+<%- include("partials/CenterHeader"); -%>
+
+<div class="row">
+  <div class="col-md-6 confirmOrder">
+    <h1>Confirm your order</h1>
+    <div class="row shipping-add">
+      <div class="col-lg-5">
+        <h4>Pickup address</h4>
+        <p><b><%=shipping.P_name%></b><br>
+          <%=shipping.P_addLn1%>, <%=shipping.P_addLn2%><br>
+          <%=shipping.P_addLn4%> - <%=shipping.P_addLn5%>,<br>
+          <%=shipping.P_addLn6%>.<br>
+          <%=shipping.P_addLn3%><br>
+          <i class="fas fa-phone-alt"></i> <%=shipping.P_mob%><br>
+          <i class="far fa-envelope"></i> <%=shipping.email%><br>
+        </p>
+      </div>
+      <div class="col-lg-5">
+        <h4>Drop address</h4>
+      <% if (type == "p&fI" || type == "p&mp"){%>
+          <br><p><%=shipping.D_name%>,<br>
+      <%} else{%>
+        <p><b><%=shipping.D_name%></b><br>
+      <%}%>
+          <%=shipping.D_addLn1%>, <%=shipping.D_addLn2%><br>
+          <%=shipping.D_addLn4%> - <%=shipping.D_addLn5%>,<br>
+          <%=shipping.D_addLn6%>.<br>
+          <%=shipping.D_addLn3%><br>
+          <% if (shipping.D_mob == ""){} else{%>
+          <i class="fas fa-phone-alt"></i> <%=shipping.D_mob%><br>
+
+          <%}%>
+        </p>
+      </div>
+    </div>
+<% if ( type == "p&mp"){%>
+  <div class="row order-Details">
+    <h4>House Details</h4>
+    <p><b>Total Rooms : </b><%=order.roomNo%></p>
+    <p><b>Pickup Floor : </b><%=order.pickupFloor%></p>
+    <p><b>Drop Floor : </b><%=order.dropFloor%></p>
+    <p><b>Approx No. of Items : </b><%=order.q%></p>
+  </div>
+
+<% } else {%>
+  <div class="row order-Details">
+    <h4>Load Details</h4>
+    <div class="col-lg-5">
+      <b>Material Name</b>
+      <p><%=order.materialN%></p>
+    </div>
+    <div class="col-md-3">
+      <b>Dimensions</b>
+      <p><%=order.l%> x <%=order.w%> x <%=order.h%> <%=order.unit%></p>
+    </div>
+    <div class="col-sm-2">
+      <b>Weight</b>
+      <p><%=order.wgt%> <%=order.wgtUnit%> </p>
+    </div>
+    <div class="col-sm-2">
+      <b>Quantity</b>
+      <p><%=order.q%></p>
+    </div>
+  </div>
+<%}%>
+    <div class="">
+      <h4>Service Details</h4>
+      <p><b>Type : </b><%=typeName%></p>
+      <p><b>Vehicle : </b><%=vehicle%></p>
+    </div>
+  </div>
+
+
+  <div class="col-lg-6 confirmOrder2">
+    <h1>Details</h1>
+    <div class="location-desc">
+      <h3 class=""><i class="far fa-dot-circle"></i><span><%=locationName.pickup%></span></h3>
+      <h3 class=""><i class="fas fa-arrow-down"></i></h3>
+      <h3 class=""><i class="fas fa-map-marker-alt"></i><span><%=locationName.drop%></span></h3>
+    </div>
+    <div class="">
+      <i class="fas fa-calendar-day fa-1.5x"></i>
+      <h4> Pickup Date : </h4>
+      <p><%=shipping.pickupDate%></p><br><br>
+      <i class="fas fa-arrows-alt-h fa-1.5x"></i>
+      <h4> Distance : </h4>
+      <p><%=locationData.distance%></p><br><br>
+      <i class="far fa-clock fa-1.5x"></i>
+      <h4> Approx Duration : </h4>
+      <p><%=locationData.duration%></p><br><br>
+    </div>
+
+    <div class="amount">
+      <div class="row">
+        <div class="col-sm-4">
+          <h4>Subtotal : </h4>
+        </div>
+        <div class="col-lg-4">
+          <b>Base fare : </b>
+          <b>Taxes : </b>
+          <hr>
+          <b class="total">Total Payable  </b>
+            </div>
+        <div class="col-lg-4">
+          <p>₹ <%=order.fare%></p><br>
+          <p>₹ <%=order.tax%></p>
+          <hr>
+          <p class="total">₹ <%=order.amount%></p>
+        </div>
+        <a href="/processOrder" class="btn btn-lg payment-btn" name="button" id="payment">Proceed to Pay?</a>
+        <p class="faded">No cancellations allowed</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>

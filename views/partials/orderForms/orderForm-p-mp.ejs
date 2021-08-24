@@ -1,0 +1,35 @@
+<div class="container dynamic-container" id="#dynamic-container">
+<p><a id="#p_lT" class="navigation-links" href="/booking#dynamic-container">Personal</a> > <a id="p_lT_mp" class="navigation-links" href="#dynamic-container">  Movers & packers</a> </p>
+<h1>Enter the details</h1>
+<p>Suitable truck will be recommended based on number of rooms & specifications of the items.</p>
+<form class="" action="/orderPreview?type=p&option=mp1" method="post">
+  <div class="orderDetails-form">
+  <div id="floatContainer1" class="float-container">
+    <span>House details</span>
+      <label for="floatField1">Enter total no. of rooms</label>
+      <input type="number" id="floatField1" data-placeholder="4" required min="1" max="12" name="roomNo">
+  </div>
+
+  <div class="dimensions">
+  <div id="floatContainer2" class="float-container">
+      <label for="floatField2">Pickup Floor</label>
+      <input type="number" id="floatField2" data-placeholder="1" required autocomplete="off" min="0" max="16" name="pickupFloor">
+  </div>
+  <div id="floatContainer3" class="float-container">
+      <label for="floatField3">Drop Floor</label>
+      <input type="number" id="floatField3" data-placeholder="3" required autocomplete="off" min="0" max="16" name="dropFloor">
+  </div>
+</div>
+
+<div id="floatContainer6" class="float-container">
+  <span>Quantity</span>
+  <label for="floatField5">Approx No. of Items</label>
+  <input type="number" id="floatField6" data-placeholder="30" value="1" min="1" max="150" required autocomplete="off" name="q">
+</div>
+
+<div class="">
+  <button type="submit" class="btn btn-lg address-btn">Enter Address</button>
+</div>
+</div>
+</form>
+</div>

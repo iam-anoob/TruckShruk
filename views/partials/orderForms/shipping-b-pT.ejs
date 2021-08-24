@@ -1,0 +1,115 @@
+<div class="container dynamic-container" id="#dynamic-container">
+<p><a id="#b_tT" class="navigation-links" href="/booking#dynamic-container">Business</a> > <a id="b_fT_mT" class="navigation-links" onclick="goBack()">  Part Truck</a> > <a id="b_fT_mT" class="navigation-links" href="#dynamic-container">  Shipping details</a> </p>
+<h1>Shipping details</h1>
+<p>Enter the preferred date for pickup of load & complete pickup & drop addresses.</p>
+<form class="" action="/orderPreview?type=b&option=pT2" method="post">
+  <div class="orderDetails-form">
+  <div class="dimensions">
+  <div id="floatContainer1" class="float-container">
+    <span>Pickup Date</span>
+      <input type="text" id="pickupDate" data-placeholder="12/08/2021" required name="pickupDate"><i class="fas fa-calendar-day"></i>
+  </div>
+</div>
+<div id="floatContainer2" class="float-container">
+  <span>Pickup address</span>
+    <label for="floatField2">Company Name</label>
+    <input type="text" id="floatField2" data-placeholder="Company pvt. ltd." required autocomplete="off" name="P_name">
+</div>
+<div id="floatContainer2" class="float-container">
+    <label for="floatField2">Building/Plot</label>
+    <input type="text" id="floatField2" data-placeholder="Plot no. 04" required autocomplete="off" name="P_addLn1">
+</div>
+<div id="floatContainer3" class="float-container">
+    <label for="floatField3">Area, street, sector</label>
+    <input type="text" id="floatField3" data-placeholder="Sector 4-B" required autocomplete="off" name="P_addLn2">
+</div>
+<div id="floatContainer4" class="float-container">
+    <label for="floatField4">Landmark</label>
+    <input type="text" id="floatField4" data-placeholder="near Fortis hospital" autocomplete="off" name="P_addLn3">
+</div>
+<div class="dimensions">
+  <div id="floatContainer5" class="float-container">
+      <label for="floatField5">Town/City</label>
+      <input type="text" id="floatField5" data-placeholder="Kalyan" required autocomplete="off" name="P_addLn4">
+  </div>
+  <div id="floatContainer6" class="float-container">
+      <label for="floatField6">Pincode</label>
+      <input type="text" id="floatField6" data-placeholder="421306" required autocomplete="off" maxlength = "6" name="P_addLn5">
+  </div>
+</div>
+<div class="dimensions">
+<div id="floatContainer7" class="float-container">
+    <label for="floatField7">State</label>
+    <input type="text" id="floatField7" data-placeholder="Maharashtra" required autocomplete="off" name="P_addLn6">
+</div>
+
+<div id="floatContainer8" class="float-container">
+    <label for="floatField8">Contact Number</label>
+    <input type="tel" id="floatField8" data-placeholder="9852XXXX47" required maxlength="10" autocomplete="off" name="P_mob">
+</div>
+</div>
+<br>
+
+<div id="floatContainer9" class="float-container">
+  <span>Drop address</span>
+    <label for="floatField9">Company Name</label>
+    <input type="text" id="floatField9" data-placeholder="Company pvt. ltd." required autocomplete="off" name="D_name">
+</div>
+<div id="floatContainer10" class="float-container">
+    <label for="floatField10">Building/Plot</label>
+    <input type="text" id="floatField10" data-placeholder="Plot no. 04" required autocomplete="off" name="D_addLn1">
+</div>
+<div id="floatContainer11" class="float-container">
+    <label for="floatField11">Area, street, sector</label>
+    <input type="text" id="floatField11" data-placeholder="Sector 4-B" required autocomplete="off" name="D_addLn2">
+</div>
+<div id="floatContainer12" class="float-container">
+    <label for="floatField12">Landmark</label>
+    <input type="text" id="floatField12" data-placeholder="near Fortis hospital" autocomplete="off" name="D_addLn3">
+</div>
+<div class="dimensions">
+  <div id="floatContainer13" class="float-container">
+      <label for="floatField13">Town/City</label>
+      <input type="text" id="floatField13" data-placeholder="Kalyan" required autocomplete="off" name="D_addLn4">
+  </div>
+  <div id="floatContainer14" class="float-container">
+      <label for="floatField14">Pincode</label>
+      <input type="text" id="floatField14" data-placeholder="421306" required autocomplete="off" maxlength = "6" name="D_addLn5">
+  </div>
+</div>
+<div class="dimensions">
+<div id="floatContainer15" class="float-container">
+    <label for="floatField15">State</label>
+    <input type="text" id="floatField15" data-placeholder="Maharashtra" required autocomplete="off" name="D_addLn6">
+</div>
+
+<div id="floatContainer16" class="float-container">
+    <label for="floatField16">Contact Number</label>
+    <input type="tel" id="floatField16" data-placeholder="9852XXXX47" required maxlength="10" autocomplete="off" name="D_mob">
+</div>
+</div>
+
+<div class="">
+  <button type="submit" class="btn btn-lg address-btn">Order Preview</button>
+</div>
+</div>
+</form>
+</div>
+
+<script type="text/javascript">
+let date = new Date()
+let today = date.toISOString().slice(0, 10)
+
+date.setDate(date.getDate() + 45 );
+var maxDate = date.toISOString().split('T')[0];
+const input = document.getElementById('pickupDate');
+const datepicker = new TheDatepicker.Datepicker(input);
+datepicker.options.setMinDate(today);
+datepicker.options.setMaxDate(maxDate);
+datepicker.options.setDropdownItemsLimit(1);
+datepicker.options.setInitialDate(today);
+datepicker.options.setShowDeselectButton();
+datepicker.render();
+
+</script>
+<script src="/JS/input.js"></script>
